@@ -1,7 +1,7 @@
 // @ts-nocheck
 
-import {createMuiTheme} from "@material-ui/core"
-import {red} from "@material-ui/core"
+import { createMuiTheme } from '@material-ui/core/styles';
+import { red } from '@material-ui/core/colors';
 
 export const theme = createMuiTheme({
 	typography: {
@@ -30,6 +30,13 @@ export const theme = createMuiTheme({
 		},
 		background: {
 			default: '#fff',
+		},
+		text: {
+			primary: '#14171a',
+		},
+		action: {
+			disabledBackground: 'rgb(153 216 255)',
+			disabled: '#fff',
 		},
 	},
 	shadows: [],
@@ -76,7 +83,7 @@ export const theme = createMuiTheme({
 		},
 		MuiDialogTitle: {
 			root: {
-				borderBottom: '1px solid rgb(204, 248, 250)',
+				borderBottom: '1px solid rgb(204, 214, 221)',
 				marginBottom: 10,
 				padding: '10px 15px',
 				'& h2': {
@@ -91,6 +98,6 @@ export const theme = createMuiTheme({
 			},
 		},
 	},
-})
+});
 
-export default theme
+export default theme;
