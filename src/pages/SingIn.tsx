@@ -5,7 +5,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import PeopleIcon from '@material-ui/icons/PeopleOutline';
 import MessageIcon from '@material-ui/icons/ModeCommentOutlined';
 
-const useStylesSignIn = makeStyles((theme) => ({
+export const useStylesSignIn = makeStyles((theme) => ({
 	wrapper: {
 		display: 'flex',
 		height: 'calc(100vh - 84px)',
