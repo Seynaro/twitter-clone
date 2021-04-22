@@ -18,6 +18,8 @@ interface AddTweetFormProps {
 export const AddTweetForm: React.FC<AddTweetFormProps> = ({classes}: AddTweetFormProps): React.ReactElement => {
 
 	const [text, setText] = React.useState<string>('')
+	const textLimitPercent = Math.round((text.length / 280) * 100)
+
 
 	const handleChangeTextArea = (e: React.FormEvent<HTMLTextAreaElement>) => {
 		if (e.currentTarget) {
@@ -64,7 +66,7 @@ export const AddTweetForm: React.FC<AddTweetFormProps> = ({classes}: AddTweetFor
 						</>
 					)}
 					<Button
-
+						disabled={textLimitPercent >= 100}
 						color="primary"
 						variant="contained">
 						/>
